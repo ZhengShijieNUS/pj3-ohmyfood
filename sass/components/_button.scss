@@ -1,0 +1,22 @@
+.button{
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(to bottom right,$color-secondary,$color-primary);
+
+    width: 70%;
+    height: auto;
+    padding: $middle-padding 0px;
+    margin: $standard-margin;
+
+    cursor: pointer;
+
+    &__text{
+        color:white;
+        @include font("text");
+    }
+
+    &:hover{
+        background-image: linear-gradient(to bottom right,$color-primary,$color-secondary);
+    }
+
+}

@@ -1,0 +1,64 @@
+.heading{
+    @include flex-display(row,center,center,center,wrap);
+    margin: $standard-margin;
+    padding: $standard-padding;
+}
+
+.location{
+    @include flex-display(row,center,center,center,wrap);
+
+    background-color: adjust-color($color-grey,$lightness:10%);
+
+    &__p{
+        @include font("");
+        padding: 0 $standard-padding;
+    }
+    &__icon{
+        padding: 0 $standard-padding;
+    }
+}
+
+.book-the-menu{
+    @include flex-display(column,center,center,center,wrap);
+
+    padding: $middle-padding $standard-padding;
+
+    background-color: adjust-color($color-grey,$lightness:22%);
+
+    &__subheader{
+        @include font("text");
+        font-weight: bolder;
+    }
+
+    &__description{
+        @include font("text");
+        text-align: center;
+    }
+
+    &__button{
+        @extend .button;
+    }
+
+}
+
+.how-it-works{
+    @include flex-display(column,flex-start,flex-start,flex-start,wrap);
+
+    padding: $middle-padding $middle-padding;
+
+    &__subheader{
+        @include font("text");
+        padding: $standard-padding;
+    }
+
+    &__list{
+        @include flex-display(column,flex-start,center,center,nowrap);
+        width: 100%;
+
+        &__card{
+            padding: $standard-padding;
+            @extend .how-it-works-card;
+        }
+    }
+
+}

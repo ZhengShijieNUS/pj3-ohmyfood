@@ -1,1 +1,44 @@
+/* order to import files
+
+1.Utils:
+    1. Variables
+    2. Functions
+    3. Mixins
+    4. Placeholders
+
+2.Vendor sheets (if you have them)
+3.Base
+4.Components
+5.Layout
+6.Pages
+7.Themes
+
+*/
+
+/* --------The below for debug purpose used------ */
+
+// *{
+//    outline: solid #f00 1px !important;
+//    background:#000 !important;
+//    color:#fff !important; 
+// }
+
+/* --------The above for debug purpose used------ */
+
+
+// base:import first as utils may use the setting(font etc) from base
+@import "./base/base";
+
+// utils
 @import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixin";
+
+// components
+@import "./components/button";
+
+// layout
+@import "./layout/how-it-works-card";
+
+// pages
+@import "./pages/home-page";

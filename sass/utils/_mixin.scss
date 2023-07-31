@@ -1,0 +1,18 @@
+
+@mixin font($font-type){
+    @if ($font-type == 'title' or $font-type == 'logo'){
+        font-family: 'Shrikhand', cursive;
+    }@else{
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@mixin flex-display($flex-direction,$flex-main,$flex-side,$flex-multiple,$flex-wrap) {
+    display:flex;
+    flex-direction: $flex-direction;
+    justify-content: $flex-main;
+    align-items: $flex-side;
+    align-content: $flex-multiple;
+
+    flex-wrap: $flex-wrap;
+}
