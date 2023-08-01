@@ -1,7 +1,7 @@
 .how-it-works-card{
     @include flex-display(row,flex-start,center,center,wrap);
     background-color: adjust-color($color-grey,$lightness:20%);
-    box-shadow: 5px 5px 5px adjust-color($color-grey,$lightness:15%);;
+    box-shadow: 5px 5px 5px adjust-color($color-grey,$lightness:15%);
     border-radius: 20px;
     margin: $standard-margin 0;
 
@@ -37,6 +37,7 @@
         margin:0 $standard-margin;
         @include font(text);
         color:#000;
+        font-size: 90%;
     }
 
     &:hover{
