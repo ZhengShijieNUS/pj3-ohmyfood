@@ -2,11 +2,14 @@
     border-radius: 30px;
     border: none;
     background-image: linear-gradient(to bottom right,$color-secondary,$color-primary);
+    opacity:0.9;
 
     width: 70%;
     height: auto;
     padding: $middle-padding 0px;
     margin: $standard-margin;
+
+    box-shadow: 5px 5px 5px adjust-color($color-grey,$lightness:10%);
 
     cursor: pointer;
 
@@ -16,7 +19,8 @@
     }
 
     &:hover{
-        background-image: linear-gradient(to bottom right,$color-primary,$color-secondary);
+        opacity:1;
+        box-shadow: 5px 5px 5px adjust-color($color-grey,$lightness:0%);
     }
 
 }

@@ -42,10 +42,12 @@
 
     &:hover{
         background-color: adjust-color($color-primary,$lightness:35%);
+        box-shadow: 5px 5px 5px adjust-color($color-grey,$lightness:0%);
     }
 
     &:active{
         background-color: adjust-color($color-primary,$lightness:35%);
+        box-shadow: 5px 5px 5px adjust-color($color-grey,$lightness:0%);
     }
 
 }
