@@ -4,7 +4,7 @@
     height: 25%;
 
     border-radius: 20px;
-    background-color: #fff;
+    background-color: $color-white;
     margin: $standard-margin $middle-margin;
 
     &::after{
@@ -87,8 +87,12 @@
 
     }
 
-    
-
+    & > a{
+        text-decoration: none;
+        &:visited{
+            color:$color-black;
+        }
+    }
 
     
 

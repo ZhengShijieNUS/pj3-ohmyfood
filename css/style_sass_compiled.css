@@ -37,7 +37,7 @@ body {
   cursor: pointer;
 }
 .button__text {
-  color: white;
+  color: #fff;
   font-family: "Roboto", sans-serif;
 }
 .button:hover, .book-the-menu__button:hover {
@@ -163,6 +163,12 @@ body {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
+.restaurants-card > a, .restaurants__list__card--new > a, .restaurants__list__card > a {
+  text-decoration: none;
+}
+.restaurants-card > a:visited, .restaurants__list__card--new > a:visited, .restaurants__list__card > a:visited {
+  color: #000;
+}
 
 .footer-layout, .footer {
   display: flex;
@@ -202,6 +208,12 @@ body {
 .footer-layout__des > p {
   margin: 10% 0px;
   padding: 0px 5%;
+}
+.footer-layout__des > p > a {
+  text-decoration: none;
+}
+.footer-layout__des > p > a:visited {
+  color: #fff;
 }
 
 .heading {

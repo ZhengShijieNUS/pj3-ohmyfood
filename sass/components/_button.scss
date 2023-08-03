@@ -11,7 +11,7 @@
     cursor: pointer;
 
     &__text{
-        color:white;
+        color:$color-white;
         @include font("text");
     }
 

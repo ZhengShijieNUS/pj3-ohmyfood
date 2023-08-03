@@ -1,9 +1,9 @@
 .footer-layout{
     @include flex-display(column,flex-start,flex-start,center,nowrap);
-    color:#fff;
-    background-color: adjust-color(#000,$lightness:15%);
+    color:$color-white;
+    background-color: adjust-color($color-black,$lightness:15%);
     padding: 0px $middle-padding;
-    
+
     &__header{
         @include font(title);
 
@@ -33,6 +33,14 @@
         & > p{
             margin: $large-margin 0px;
             padding:0px $middle-padding;
+
+            & > a{
+                text-decoration: none;
+
+                &:visited{
+                    color:$color-white;
+                }
+            }
         }
 
     }
