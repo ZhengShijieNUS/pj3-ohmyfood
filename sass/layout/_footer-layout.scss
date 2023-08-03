@@ -1,0 +1,39 @@
+.footer-layout{
+    @include flex-display(column,flex-start,flex-start,center,nowrap);
+    color:#fff;
+    background-color: adjust-color(#000,$lightness:15%);
+    padding: 0px $middle-padding;
+    
+    &__header{
+        @include font(title);
+
+    }
+
+    &__icon-des{
+        @include flex-display(row,flex-start,center,center,nowrap);
+        width: 50%;
+
+        @include font(text);
+
+        & > span{
+            width:5%;
+            padding:0px $standard-padding ;
+        }
+
+        & > p{
+            margin: $standard-margin 0px;
+            padding:0px $middle-padding;
+        }
+    }
+
+    &__des{
+
+        @include font(text);
+
+        & > p{
+            margin: $large-margin 0px;
+            padding:0px $middle-padding;
+        }
+
+    }
+}

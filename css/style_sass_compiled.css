@@ -164,6 +164,46 @@ body {
   mask-repeat: no-repeat;
 }
 
+.footer-layout, .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  color: #fff;
+  background-color: #262626;
+  padding: 0px 5%;
+}
+.footer-layout__header {
+  font-family: "Shrikhand", cursive;
+}
+.footer-layout__icon-des {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+}
+.footer-layout__icon-des > span {
+  width: 5%;
+  padding: 0px 2.5%;
+}
+.footer-layout__icon-des > p {
+  margin: 2.5% 0px;
+  padding: 0px 5%;
+}
+.footer-layout__des {
+  font-family: "Roboto", sans-serif;
+}
+.footer-layout__des > p {
+  margin: 10% 0px;
+  padding: 0px 5%;
+}
+
 .heading {
   display: flex;
   flex-direction: row;
