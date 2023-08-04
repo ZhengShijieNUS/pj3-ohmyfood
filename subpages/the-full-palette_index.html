@@ -3,20 +3,32 @@
 <html lang="en">
 
 <head>
-    <title>This is the OhMyFood webiste.</title>
+    <title>This is the Bastile menu webiste of OhMyFood.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style_sass_compiled.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style_sass_compiled.css">
     <script src="https://kit.fontawesome.com/6ac6577e21.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
-    <header class="heading">
-        <img src="assets\logo\ohmyfood@2x.svg" alt="logo-header">
+    <header class="subpage-heading">
+        <span class="subpage-heading__back-icon"><a href="../index.html"><i class="fa-solid fa-left-long"></i></a></span>
+        <img src="../assets/logo/ohmyfood@2x.svg" alt="logo-header">
     </header>
-    <main>
+    <main class="subpage-main">
+        <div class="subpage-main__background-img">
+            <img src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="the-full-palette-background">
+        </div>
+        <div class="subpage-main__menu">
+            <div class="subpage-main__menu__heading">
+                <h2>The Full Pallette</h2>
+                <div class="subpage-main__menu__heading__like"></div>
+            </div>
+        </div>
+    </main>
+    <!-- <main>
         <section class="location">
             <span class="location__icon"><i class="fa-solid fa-location-dot"></i></span>
             <p class="location__p">Paris, Belleville</p>
@@ -50,7 +62,7 @@
             <h2 class="restaurants__subheader">Restaurants</h2>
             <div class="restaurants__list">
                 <div class="restaurants__list__card restaurants__list__card--new">
-                    <a href="./subpages/the-full-palette_index.html">
+                    <a href="">
                         <div class="restaurants-card__img-container">
                             <img class="restaurants-card__img-container__img"
                                 src="assets\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg"
@@ -117,7 +129,7 @@
                 </div>
             </div>
         </section>
-    </main>
+    </main> -->
     <footer class="footer">
         <!-- <img src="assets\logo\ohmyfood.png" alt="ohmyfood-footer"> -->
         <h2 class="footer-layout__header">ohmyfood</h2>
