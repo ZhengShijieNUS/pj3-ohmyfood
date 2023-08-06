@@ -27,10 +27,10 @@
 
 
 // base:import first as utils may use the setting(font etc) from base
+@import "./base/variables";
 @import "./base/base";
 
 // utils
-@import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixin";
 
