@@ -38,6 +38,10 @@ body {
   box-shadow: 5px 5px 5px #d7d7d7;
   cursor: pointer;
 }
+.button--small {
+  width: 40%;
+  min-height: 5vh;
+}
 .button__text {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -366,6 +370,12 @@ body {
   flex-wrap: nowrap;
 }
 .subpage-main__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
   width: 100%;
   height: auto;
   background-color: #fff;
@@ -378,11 +388,15 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: nowrap;
-  height: 10vh;
+  width: 90%;
+  height: 6vh;
   padding: 2.5% 5%;
 }
 .subpage-main__menu__heading > h2 {
   font-family: "Shrikhand", cursive;
+}
+.subpage-main__menu__button {
+  margin: 2.5% 0 10% 0;
 }
 
 /*# sourceMappingURL=style_sass_compiled.css.map */

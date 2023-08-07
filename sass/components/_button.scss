@@ -13,6 +13,11 @@
 
     cursor: pointer;
 
+    &--small{
+        width:40%;
+        min-height:5vh;
+    }
+
     &__text{
         color:$color-white;
         @include font("text");
