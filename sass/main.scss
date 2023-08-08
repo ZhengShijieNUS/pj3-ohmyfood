@@ -29,6 +29,7 @@
 // base:import first as utils may use the setting(font etc) from base
 @import "./base/variables";
 @import "./base/base";
+@import "./base/ani-keyframe";
 
 // utils
 @import "./utils/functions";
@@ -38,11 +39,13 @@
 @import "./components/button";
 @import "./components/background-img";
 @import "./components/like-img";
+@import "./components/menu-list-title";
 
 // layout
 @import "./layout/how-it-works-card";
 @import "./layout/restaurants-card";
 @import "./layout/footer-layout";
+@import "./layout/subpage-main-menu-list-card";
 
 // pages
 @import "./pages/home-page";

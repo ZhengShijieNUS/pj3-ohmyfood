@@ -27,7 +27,7 @@
         width:100%;
         height: auto;
 
-        background-color: $color-white;
+        background-color: adjust-color($color-grey,$lightness:18%);
 
         border-radius: 40px 40px 0 0;
 
@@ -50,6 +50,21 @@
         &__button{
             margin: $standard-margin 0 $large-margin 0;
 
+        }
+
+        &__list{
+            @include flex-display(column,flex-start,flex-start,center,nowrap);
+            width:90%;
+    
+            &__title{
+                @extend .menu-list-title;
+            }
+
+            &__card{
+                @extend .subpage-main-menu-list-card;
+                
+            }
+    
         }
     }
 

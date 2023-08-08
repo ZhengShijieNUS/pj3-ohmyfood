@@ -1,0 +1,96 @@
+.subpage-main-menu-list-card {
+
+    @include flex-display(row,space-between,flex-end,center,nowrap);
+    @include font(text);
+
+    background-color: $color-white;
+    border-radius: 20px ;
+    width:100%;
+    height:70px;
+
+    overflow:hidden;
+    cursor: pointer;
+
+    &__item{
+        padding: $standard-padding $middle-padding $standard-padding $standard-padding;
+        &__name{
+            font-weight: bold;
+            margin-bottom: $standard-margin;
+        }
+    }
+
+    &__selected{
+        @include flex-display(column,center,center,center,nowrap);
+        background-color: $color-tertiary;
+        width:15%;
+        height:100%;
+        color:white; 
+        display:none;
+    }
+
+    &__price{
+        @include flex-display(row,flex-end,flex-end,center,nowrap);
+        padding: 0 $standard-padding $standard-padding $standard-padding;
+        margin:0 $middle-margin;
+        width:17.5%;
+        
+        font-weight: bold;
+        &::after{
+            content:"\20AC";
+        }
+
+        transform: translateX(0);
+    }
+
+    &:hover > &__selected{
+        display:flex;
+        transform: translateX(0%);
+
+        animation:menu-list-card-slide-in 800ms both ease-in-out alternate;
+    }
+
+    &:hover > &__price{
+        margin-right: 0;
+        padding-right: 0;
+        transform:translateX(0%);
+        animation:price-slide-in 700ms 100ms both ease-in-out alternate;
+        // transform: translateX(57.5%);
+    }
+
+}
+
+
+@keyframes menu-list-card-slide-in {
+
+    0% {
+        transform: translateX(100%);
+    }
+
+    90% {
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes price-slide-in {
+
+    0% {
+        transform: translateX(57.5%);
+    }
+
+    90% {
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes spin{
+    0% {
+        transform:rotate(0deg);
+    }
+
+    100% {
+        transform:rotate(360deg);
+    }
+
+}

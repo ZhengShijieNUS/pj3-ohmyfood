@@ -1,0 +1,17 @@
+.menu-list-title{
+    
+    @include font(text);
+    margin: $standard-margin 0;
+
+    & > p{
+        margin: $large-margin 0;
+    }
+
+    & > div{
+        padding-top: calc($standard-padding/2);
+        width: 60%;
+        background-color: $color-tertiary;
+        height: 3px;
+    }
+
+}
