@@ -287,6 +287,10 @@ body {
   color: white;
   display: none;
 }
+.subpage-main-menu-list-card__selected__icon {
+  transform: rotate(0);
+  animation: spin 700ms 200ms both ease-in-out alternate;
+}
 .subpage-main-menu-list-card__price {
   display: flex;
   flex-direction: row;
@@ -306,13 +310,13 @@ body {
 .subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__selected, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__selected {
   display: flex;
   transform: translateX(0%);
-  animation: menu-list-card-slide-in 800ms both ease-in-out alternate;
+  animation: menu-list-card-slide-in 800ms 50ms both ease-in-out alternate;
 }
 .subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__price, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__price {
   margin-right: 0;
   padding-right: 0;
   transform: translateX(0%);
-  animation: price-slide-in 700ms 100ms both ease-in-out alternate;
+  animation: price-slide-in 700ms 150ms both ease-in-out alternate;
 }
 
 @keyframes menu-list-card-slide-in {

@@ -26,6 +26,11 @@
         height:100%;
         color:white; 
         display:none;
+
+        &__icon{
+            transform:rotate(0);
+            animation:spin 700ms 200ms both ease-in-out alternate;
+        }
     }
 
     &__price{
@@ -46,14 +51,18 @@
         display:flex;
         transform: translateX(0%);
 
-        animation:menu-list-card-slide-in 800ms both ease-in-out alternate;
+        animation:menu-list-card-slide-in 800ms 50ms both ease-in-out alternate;
+
+        &__icon{
+            
+        }
     }
 
     &:hover > &__price{
         margin-right: 0;
         padding-right: 0;
         transform:translateX(0%);
-        animation:price-slide-in 700ms 100ms both ease-in-out alternate;
+        animation:price-slide-in 700ms 150ms both ease-in-out alternate;
         // transform: translateX(57.5%);
     }
 
