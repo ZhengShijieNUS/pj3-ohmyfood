@@ -12,11 +12,14 @@
     cursor: pointer;
 
     &__item{
+        width: 50%;
+
         padding: $standard-padding $middle-padding $standard-padding $standard-padding;
         &__name{
             font-weight: bold;
             margin-bottom: $standard-margin;
         }
+
     }
 
     &__selected{
@@ -27,10 +30,6 @@
         color:white; 
         display:none;
 
-        &__icon{
-            transform:rotate(0);
-            animation:spin 700ms 200ms both ease-in-out alternate;
-        }
     }
 
     &__price{
@@ -49,20 +48,20 @@
 
     &:hover > &__selected{
         display:flex;
-        transform: translateX(0%);
 
-        animation:menu-list-card-slide-in 800ms 50ms both ease-in-out alternate;
+        animation:menu-list-card-slide-in 800ms 50ms both ease-in-out normal;
 
-        &__icon{
-            
+        & > i{
+            animation:spin 700ms 200ms both ease-in-out normal;
         }
+
     }
 
     &:hover > &__price{
         margin-right: 0;
         padding-right: 0;
         transform:translateX(0%);
-        animation:price-slide-in 700ms 150ms both ease-in-out alternate;
+        animation:price-slide-in 700ms 150ms both ease-in-out normal;
         // transform: translateX(57.5%);
     }
 
@@ -75,7 +74,7 @@
         transform: translateX(100%);
     }
 
-    90% {
+    100% {
         transform: translateX(0%);
     }
     

@@ -268,6 +268,7 @@ body {
   cursor: pointer;
 }
 .subpage-main-menu-list-card__item {
+  width: 50%;
   padding: 2.5% 5% 2.5% 2.5%;
 }
 .subpage-main-menu-list-card__item__name {
@@ -287,10 +288,6 @@ body {
   color: white;
   display: none;
 }
-.subpage-main-menu-list-card__selected__icon {
-  transform: rotate(0);
-  animation: spin 700ms 200ms both ease-in-out alternate;
-}
 .subpage-main-menu-list-card__price {
   display: flex;
   flex-direction: row;
@@ -309,21 +306,23 @@ body {
 }
 .subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__selected, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__selected {
   display: flex;
-  transform: translateX(0%);
-  animation: menu-list-card-slide-in 800ms 50ms both ease-in-out alternate;
+  animation: menu-list-card-slide-in 800ms 50ms both ease-in-out normal;
+}
+.subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__selected > i, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__selected > i {
+  animation: spin 700ms 200ms both ease-in-out normal;
 }
 .subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__price, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__price {
   margin-right: 0;
   padding-right: 0;
   transform: translateX(0%);
-  animation: price-slide-in 700ms 150ms both ease-in-out alternate;
+  animation: price-slide-in 700ms 150ms both ease-in-out normal;
 }
 
 @keyframes menu-list-card-slide-in {
   0% {
     transform: translateX(100%);
   }
-  90% {
+  100% {
     transform: translateX(0%);
   }
 }
