@@ -59,6 +59,22 @@ body {
     transform: rotate(360deg);
   }
 }
+@keyframes menu-list-card-slide-out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .button, .book-the-menu__button {
   border-radius: 30px;
   border: none;
