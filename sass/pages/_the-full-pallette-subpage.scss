@@ -62,12 +62,17 @@
 
             &__card{
                 @extend .subpage-main-menu-list-card;
+
+                @for $i from 1 through 5 {
+                    &--#{$i}{
+                        @include menu-loading(600ms, $animation-delay*$i);
+                    }
+
+                }
                 
             }
     
         }
     }
-
-
 
 }

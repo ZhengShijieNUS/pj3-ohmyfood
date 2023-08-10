@@ -27,6 +27,38 @@ body {
   flex-direction: column;
 }
 
+@keyframes menu-loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu-list-card-slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes price-slide-in {
+  0% {
+    transform: translateX(57.5%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .button, .book-the-menu__button {
   border-radius: 30px;
   border: none;
@@ -264,6 +296,7 @@ body {
   border-radius: 20px;
   width: 100%;
   height: 70px;
+  margin: 2.5% 0;
   overflow: hidden;
   cursor: pointer;
 }
@@ -274,6 +307,11 @@ body {
 .subpage-main-menu-list-card__item__name {
   font-weight: bold;
   margin-bottom: 2.5%;
+}
+.subpage-main-menu-list-card__item__des {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .subpage-main-menu-list-card__selected {
   display: flex;
@@ -312,36 +350,12 @@ body {
   animation: spin 700ms 200ms both ease-in-out normal;
 }
 .subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__price, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__price {
-  margin-right: 0;
+  margin-right: 5%;
   padding-right: 0;
   transform: translateX(0%);
   animation: price-slide-in 700ms 150ms both ease-in-out normal;
 }
 
-@keyframes menu-list-card-slide-in {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-@keyframes price-slide-in {
-  0% {
-    transform: translateX(57.5%);
-  }
-  90% {
-    transform: translateX(0%);
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .heading {
   display: flex;
   flex-direction: row;
@@ -511,6 +525,31 @@ body {
   align-content: center;
   flex-wrap: nowrap;
   width: 90%;
+}
+.subpage-main__menu__list__card--1 {
+  content: "";
+  transform-origin: top;
+  animation: menu-loading 600ms 200ms both ease-in-out alternate;
+}
+.subpage-main__menu__list__card--2 {
+  content: "";
+  transform-origin: top;
+  animation: menu-loading 600ms 400ms both ease-in-out alternate;
+}
+.subpage-main__menu__list__card--3 {
+  content: "";
+  transform-origin: top;
+  animation: menu-loading 600ms 600ms both ease-in-out alternate;
+}
+.subpage-main__menu__list__card--4 {
+  content: "";
+  transform-origin: top;
+  animation: menu-loading 600ms 800ms both ease-in-out alternate;
+}
+.subpage-main__menu__list__card--5 {
+  content: "";
+  transform-origin: top;
+  animation: menu-loading 600ms 1000ms both ease-in-out alternate;
 }
 
 /*# sourceMappingURL=style_sass_compiled.css.map */

@@ -16,3 +16,9 @@
 
     flex-wrap: $flex-wrap;
 }
+
+@mixin menu-loading($dur, $delay) {
+    content:"";
+    transform-origin: top;
+    animation:menu-loading $dur $delay both ease-in-out alternate; 
+}
