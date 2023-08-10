@@ -36,7 +36,15 @@
         width:15%;
         height:100%;
         color:white; 
-        display:none;
+
+        transform: translateX(100%);
+        transition: all 500ms ease-in-out;
+
+        & > i{
+            // animation:spin 700ms 200ms both ease-in-out normal;
+            transform: rotate(0);
+            transition: all 500ms ease-in-out;
+        }
 
     }
 
@@ -51,16 +59,19 @@
             content:"\20AC";
         }
 
-        transform: translateX(0);
+        transform: translateX(80%);
+        transition: all 500ms ease-in-out;
     }
 
     &:hover > &__selected{
         display:flex;
 
-        animation:menu-list-card-slide-in 800ms 50ms both ease-in-out normal;
+        // animation:menu-list-card-slide-in 800ms 50ms both ease-in-out normal;
+        transform: translateX(0%);
 
         & > i{
-            animation:spin 700ms 200ms both ease-in-out normal;
+            // animation:spin 700ms 200ms both ease-in-out normal;
+            transform: rotate(360deg);
         }
 
     }
@@ -69,7 +80,7 @@
         margin-right: $middle-margin;
         padding-right: 0;
         transform:translateX(0%);
-        animation:price-slide-in 700ms 150ms both ease-in-out normal;
+        // animation:price-slide-in 700ms 150ms both ease-in-out normal;
     }
 
 }
