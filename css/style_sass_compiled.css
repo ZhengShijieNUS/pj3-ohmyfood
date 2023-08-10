@@ -35,46 +35,6 @@ body {
     opacity: 1;
   }
 }
-@keyframes menu-list-card-slide-in {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-@keyframes price-slide-in {
-  0% {
-    transform: translateX(57.5%);
-  }
-  90% {
-    transform: translateX(0%);
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes menu-list-card-slide-out {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes spin-reverse {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 .button, .book-the-menu__button {
   border-radius: 30px;
   border: none;
@@ -337,10 +297,10 @@ body {
   align-content: center;
   flex-wrap: nowrap;
   background-color: #99E2D0;
-  width: 15%;
+  width: 20%;
   height: 100%;
   color: white;
-  transform: translateX(100%);
+  transform: translateX(105%);
   transition: all 500ms ease-in-out;
 }
 .subpage-main-menu-list-card__selected > i {
@@ -354,26 +314,23 @@ body {
   align-items: flex-end;
   align-content: center;
   flex-wrap: nowrap;
-  padding: 0 2.5% 2.5% 2.5%;
-  margin: 0 5%;
+  padding: 0 0 2.5% 0;
+  margin: 0 0 0 0;
   width: 15%;
   font-weight: bold;
   transform: translateX(80%);
-  transition: all 500ms ease-in-out;
+  transition: all 500ms 50ms ease-in-out;
 }
 .subpage-main-menu-list-card__price::after {
   content: "€";
 }
 .subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__selected, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__selected {
-  display: flex;
   transform: translateX(0%);
 }
 .subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__selected > i, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__selected > i {
   transform: rotate(360deg);
 }
 .subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__price, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__price {
-  margin-right: 5%;
-  padding-right: 0;
   transform: translateX(0%);
 }
 

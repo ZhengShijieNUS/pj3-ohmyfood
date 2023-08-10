@@ -33,15 +33,14 @@
     &__selected{
         @include flex-display(column,center,center,center,nowrap);
         background-color: $color-tertiary;
-        width:15%;
+        width:20%;
         height:100%;
         color:white; 
 
-        transform: translateX(100%);
+        transform: translateX(105%);
         transition: all 500ms ease-in-out;
 
         & > i{
-            // animation:spin 700ms 200ms both ease-in-out normal;
             transform: rotate(0);
             transition: all 500ms ease-in-out;
         }
@@ -50,8 +49,8 @@
 
     &__price{
         @include flex-display(row,flex-end,flex-end,center,nowrap);
-        padding: 0 $standard-padding $standard-padding $standard-padding;
-        margin:0 $middle-margin;
+        padding: 0 0 $standard-padding 0;
+        margin:0 0 0 0;
         width:15%;
         
         font-weight: bold;
@@ -60,27 +59,21 @@
         }
 
         transform: translateX(80%);
-        transition: all 500ms ease-in-out;
+        transition: all 500ms 50ms ease-in-out;
     }
 
     &:hover > &__selected{
-        display:flex;
 
-        // animation:menu-list-card-slide-in 800ms 50ms both ease-in-out normal;
         transform: translateX(0%);
 
         & > i{
-            // animation:spin 700ms 200ms both ease-in-out normal;
             transform: rotate(360deg);
         }
 
     }
 
     &:hover > &__price{
-        margin-right: $middle-margin;
-        padding-right: 0;
         transform:translateX(0%);
-        // animation:price-slide-in 700ms 150ms both ease-in-out normal;
     }
 
 }
