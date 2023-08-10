@@ -36,7 +36,7 @@
         @include flex-display(row,flex-end,flex-end,center,nowrap);
         padding: 0 $standard-padding $standard-padding $standard-padding;
         margin:0 $middle-margin;
-        width:17.5%;
+        width:15%;
         
         font-weight: bold;
         &::after{
