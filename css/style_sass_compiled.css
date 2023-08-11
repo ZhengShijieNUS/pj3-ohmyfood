@@ -73,8 +73,8 @@ body {
 
 .like-img, .subpage-main__menu__heading__like, .restaurants-card__sub-description__like {
   cursor: pointer;
-  width: 10%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   background-image: url("/assets/icon/heart-regular.svg"); /* path to empty heart svg*/
   background-size: contain;
   background-repeat: no-repeat;
@@ -152,37 +152,41 @@ body {
   box-shadow: 5px 5px 5px #bdbdbd;
 }
 
-.restaurants-card, .restaurants__list__card--new, .restaurants__list__card {
+.restaurants-card, .restaurants__list__card {
   width: 90%;
-  height: 25%;
+  height: 20%;
   border-radius: 20px;
   background-color: #fff;
   margin: 2.5% 5%;
-}
-.restaurants-card::after, .restaurants__list__card--new::after, .restaurants__list__card::after {
-  content: "New";
-  display: none;
-  padding: 1.5%;
-  background-color: rgb(87, 247, 233);
-  color: #008637;
-  width: 15%;
-  height: 7%;
-  text-align: center;
-  position: relative;
-  left: 77.5%;
-  top: -95%;
-  font-family: "Roboto", sans-serif;
-  font-size: 85%;
+  padding-bottom: 0;
 }
 .restaurants-card__img-container {
   width: 100%;
-  height: 70%;
+  height: 20vh;
 }
 .restaurants-card__img-container__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+}
+.restaurants-card__img-container::after {
+  content: "New";
+  display: none;
+  padding: 1.5%;
+  background-color: rgb(87, 247, 233);
+  color: #008637;
+  width: 15%;
+  height: auto;
+  text-align: center;
+  position: relative;
+  left: 75%;
+  top: -90%;
+  font-family: "Roboto", sans-serif;
+  font-size: 85%;
+}
+.restaurants-card__img-container--new::after {
+  display: block;
 }
 .restaurants-card__sub-description {
   display: flex;
@@ -208,7 +212,11 @@ body {
 .restaurants-card__sub-description__des__loc {
   margin: 2.5% 0;
 }
-.restaurants-card > a, .restaurants__list__card--new > a, .restaurants__list__card > a {
+.restaurants-card__sub-description__like {
+  width: 5vh;
+  height: 5vh;
+}
+.restaurants-card > a, .restaurants__list__card > a {
   text-decoration: none;
   color: #000;
 }
@@ -415,8 +423,9 @@ body {
   align-content: flex-start;
   flex-wrap: nowrap;
   width: 100%;
-  height: 1200px;
+  height: auto;
   background-color: #f6f6f6;
+  padding-bottom: 5%;
 }
 .restaurants__subheader {
   font-family: "Roboto", sans-serif;
@@ -457,9 +466,6 @@ body {
   content: "";
   transform-origin: top;
   animation: menu-loading 600ms 1000ms both ease-in-out alternate;
-}
-.restaurants__list__card--new::after {
-  display: block;
 }
 
 .subpage-heading {
