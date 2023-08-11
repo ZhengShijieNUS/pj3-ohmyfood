@@ -277,7 +277,7 @@ body {
 }
 .subpage-main-menu-list-card__item {
   width: 50%;
-  padding: 2.5% 5% 2.5% 2.5%;
+  padding: 5% 5% 5% 5%;
 }
 .subpage-main-menu-list-card__item__name {
   font-weight: bold;
@@ -432,6 +432,31 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: nowrap;
+}
+.restaurants__list__card--1 {
+  content: "";
+  transform-origin: top;
+  animation: menu-loading 600ms 200ms both ease-in-out alternate;
+}
+.restaurants__list__card--2 {
+  content: "";
+  transform-origin: top;
+  animation: menu-loading 600ms 400ms both ease-in-out alternate;
+}
+.restaurants__list__card--3 {
+  content: "";
+  transform-origin: top;
+  animation: menu-loading 600ms 600ms both ease-in-out alternate;
+}
+.restaurants__list__card--4 {
+  content: "";
+  transform-origin: top;
+  animation: menu-loading 600ms 800ms both ease-in-out alternate;
+}
+.restaurants__list__card--5 {
+  content: "";
+  transform-origin: top;
+  animation: menu-loading 600ms 1000ms both ease-in-out alternate;
 }
 .restaurants__list__card--new::after {
   display: block;

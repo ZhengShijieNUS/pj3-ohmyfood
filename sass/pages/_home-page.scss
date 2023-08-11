@@ -88,6 +88,13 @@
 
         &__card{
             @extend .restaurants-card;
+
+            @for $i from 1 through 5 {
+                &--#{$i}{
+                    @include menu-loading(600ms, $animation-delay*$i);
+                }
+
+            }
         }
         
         &__card--new{
