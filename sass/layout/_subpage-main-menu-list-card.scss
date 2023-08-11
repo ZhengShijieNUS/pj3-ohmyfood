@@ -6,7 +6,7 @@
     background-color: $color-white;
     border-radius: 20px ;
     width:100%;
-    height:70px;
+    height:100%;
 
     margin: $standard-margin 0;
 
@@ -34,7 +34,7 @@
         @include flex-display(column,center,center,center,nowrap);
         background-color: $color-tertiary;
         width:20%;
-        height:100%;
+        align-self: stretch;
         color:white; 
 
         transform: translateX(105%);

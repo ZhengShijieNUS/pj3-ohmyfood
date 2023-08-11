@@ -48,6 +48,7 @@
         height:25%;
 
         &__des{
+            text-decoration: none;
             width:60%;
             margin: 0 0;
             @include font(text);
@@ -72,9 +73,7 @@
 
     & > a{
         text-decoration: none;
-        &:visited{
-            color:$color-black;
-        }
+        color: $color-black;
     }
 
     
