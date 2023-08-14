@@ -15,12 +15,12 @@
 
     &__item{
         width: 80%;
-        transition: all 500ms ease-in-out;
+        transition: all 400ms linear;
 
         padding: $middle-padding $middle-padding $middle-padding $middle-padding;
         &__name{
             font-weight: bold;
-            margin-bottom: $standard-margin;
+            margin-bottom: 10px;
         }
 
         &__des{
@@ -38,12 +38,11 @@
         align-self: stretch;
         color:white; 
 
-        // transform: translateX(105%);
-        transition: all 500ms ease-in-out;
+        transition: all 400ms ease-in-out;
 
         & > i{
             transform: rotate(0);
-            transition: all 500ms ease-in-out;
+            transition: all 400ms ease-in-out;
         }
 
     }
@@ -59,8 +58,6 @@
             content:"\20AC";
         }
 
-        // transform: translateX(0%);
-        // transition: all 500ms 50ms ease-in-out;
     }
 
     &:hover > &__item {
@@ -70,16 +67,10 @@
     &:hover > &__selected{
         width: 20%;
 
-        // transform: translateX(0%);
-
         & > i{
             transform: rotate(360deg);
         }
 
     }
-
-    // &:hover > &__price{
-    //     // transform:translateX(0%);
-    // }
 
 }

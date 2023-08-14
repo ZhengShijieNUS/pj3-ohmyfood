@@ -283,12 +283,12 @@ body {
 }
 .subpage-main-menu-list-card__item {
   width: 80%;
-  transition: all 500ms ease-in-out;
+  transition: all 400ms linear;
   padding: 5% 5% 5% 5%;
 }
 .subpage-main-menu-list-card__item__name {
   font-weight: bold;
-  margin-bottom: 2.5%;
+  margin-bottom: 10px;
 }
 .subpage-main-menu-list-card__item__des {
   white-space: nowrap;
@@ -306,11 +306,11 @@ body {
   width: 0%;
   align-self: stretch;
   color: white;
-  transition: all 500ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 .subpage-main-menu-list-card__selected > i {
   transform: rotate(0);
-  transition: all 500ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 .subpage-main-menu-list-card__price {
   display: flex;
