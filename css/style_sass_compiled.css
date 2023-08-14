@@ -282,7 +282,8 @@ body {
   cursor: pointer;
 }
 .subpage-main-menu-list-card__item {
-  width: 50%;
+  width: 80%;
+  transition: all 500ms ease-in-out;
   padding: 5% 5% 5% 5%;
 }
 .subpage-main-menu-list-card__item__name {
@@ -290,8 +291,8 @@ body {
   margin-bottom: 2.5%;
 }
 .subpage-main-menu-list-card__item__des {
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .subpage-main-menu-list-card__selected {
@@ -302,10 +303,9 @@ body {
   align-content: center;
   flex-wrap: nowrap;
   background-color: #99E2D0;
-  width: 20%;
+  width: 0%;
   align-self: stretch;
   color: white;
-  transform: translateX(105%);
   transition: all 500ms ease-in-out;
 }
 .subpage-main-menu-list-card__selected > i {
@@ -319,24 +319,22 @@ body {
   align-items: flex-end;
   align-content: center;
   flex-wrap: nowrap;
-  padding: 0 0 2.5% 0;
+  padding: 0 5% 5% 0;
   margin: 0 0 0 0;
   width: 15%;
   font-weight: bold;
-  transform: translateX(80%);
-  transition: all 500ms 50ms ease-in-out;
 }
 .subpage-main-menu-list-card__price::after {
   content: "€";
 }
+.subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__item, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__item {
+  width: 50%;
+}
 .subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__selected, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__selected {
-  transform: translateX(0%);
+  width: 20%;
 }
 .subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__selected > i, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__selected > i {
   transform: rotate(360deg);
-}
-.subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__price, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__price {
-  transform: translateX(0%);
 }
 
 .heading {
