@@ -84,6 +84,7 @@ body {
 .like-img__solid i {
   background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .like-img:hover .like-img__regular, .subpage-main__menu__heading__like:hover .like-img__regular, .restaurants-card__sub-description__like:hover .like-img__regular {

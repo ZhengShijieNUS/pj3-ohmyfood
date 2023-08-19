@@ -12,6 +12,7 @@
         i {
             background:-webkit-gradient(linear, left bottom, right top, from($color-secondary), to($color-primary));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
