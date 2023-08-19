@@ -83,7 +83,18 @@
 
     &__loading-animation{
         position: absolute;
-        top:150vh;
+        top:150%;
+        @media screen and (min-width: 720px)  {
+            top:200%;
+        }
+
+        @media screen and (min-width: 1024px)  {
+            top:250%;
+        }
+
+        @media screen and (min-width: 1440px)  {
+            top:300%;
+        }
 
         align-self: center;
 
