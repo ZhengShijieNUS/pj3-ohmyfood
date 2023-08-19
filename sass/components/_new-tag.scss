@@ -1,0 +1,19 @@
+.new-tag{
+    content:"New";
+    display:none;
+    
+    @include font(text);
+    width:15%;
+    height:auto;
+    padding: 1.5%;
+    
+    font-size: 85%;
+
+    background-color: rgb(87, 247, 233);
+    color: adjust-color($color: rgb(22, 112, 59), $saturation: 50%, $lightness: 0%);
+    
+    text-align: center;
+    position:relative;
+    left:75%;
+    top:-90%;
+}

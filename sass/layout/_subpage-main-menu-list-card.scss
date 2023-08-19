@@ -2,22 +2,22 @@
 
     @include flex-display(row,space-between,flex-end,center,nowrap);
     @include font(text);
+    width:100%;
+    height:100%;
+    margin: $standard-margin 0;
 
     background-color: $color-white;
     border-radius: 20px ;
-    width:100%;
-    height:100%;
-
-    margin: $standard-margin 0;
 
     overflow:hidden;
     cursor: pointer;
 
     &__item{
         width: 80%;
+        padding: $middle-padding $middle-padding $middle-padding $middle-padding;
+
         transition: all 400ms linear;
 
-        padding: $middle-padding $middle-padding $middle-padding $middle-padding;
         &__name{
             font-weight: bold;
             margin-bottom: 10px;
@@ -33,8 +33,8 @@
 
     &__selected{
         @include flex-display(column,center,center,center,nowrap);
-        background-color: $color-tertiary;
         width:0%;
+        background-color: $color-tertiary;
         align-self: stretch;
         color:white; 
 
@@ -49,9 +49,9 @@
 
     &__price{
         @include flex-display(row,flex-end,flex-end,center,nowrap);
+        width:15%;
         padding: 0 $middle-padding $middle-padding 0;
         margin:0 0 0 0;
-        width:15%;
         
         font-weight: bold;
         &::after{
