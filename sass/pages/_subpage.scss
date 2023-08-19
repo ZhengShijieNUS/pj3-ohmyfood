@@ -42,8 +42,6 @@
             }
 
             &__like{
-                width: 5vh;
-                height: 5vh;
                 margin-right: $standard-margin;
                 @extend .like-img;
             }
