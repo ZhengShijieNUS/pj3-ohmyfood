@@ -81,23 +81,43 @@
         padding: $standard-padding $middle-padding;
     }
 
+    &__loading-animation{
+        position: absolute;
+        top:150vh;
+
+        align-self: center;
+
+        &__lds-default{
+            @extend .lds-default;
+        }
+        z-index: 1;
+
+        animation: hiding 5s both 1;
+    }
+
     &__list{
         @include flex-display(column,space-between,center,center,nowrap);
         width:90%;
         height:80%;
         padding: 0 $middle-padding;
 
+        z-index: 2;
+
+        &--animation{
+            opacity: 1; 
+            transition:opacity 2000ms 0 ease-in-out; 
+        }
+
         &__card{
             @extend .restaurants-card;
 
             @for $i from 1 through 5 {
                 &--#{$i}{
-                    @include menu-loading(600ms, $animation-delay*$i);
+                    @include menu-loading(600ms,2000ms + $animation-delay*$i);
                 }
 
             }
         }
-        
 
     }
 
