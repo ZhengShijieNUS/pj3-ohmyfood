@@ -2,11 +2,11 @@
 
     width: 90%;
     height: 20%;
+    margin: $standard-margin $middle-margin;
+    padding-bottom:0;
 
     border-radius: 20px;
     background-color: $color-white;
-    margin: $standard-margin $middle-margin;
-    padding-bottom:0;
 
 
     &__img-container{
@@ -16,25 +16,13 @@
         &__img{
             width:100%;
             height:100%;
+
             object-fit: cover;
             border-radius: 20px 20px 0 0;
         }
 
         &::after{
-            content:"New";
-            display:none;
-            padding: 1.5%;
-            background-color: rgb(87, 247, 233);
-            color: adjust-color($color: rgb(22, 112, 59), $saturation: 50%, $lightness: 0%);
-            width:15%;
-            height:auto;
-            text-align: center;
-            position:relative;
-            left:75%;
-            top:-90%;
-    
-            @include font(text);
-            font-size: 85%;
+            @extend .new-tag;
         }
 
         &--new{
@@ -49,16 +37,16 @@
 
     &__sub-description{
         @include flex-display(row,space-between,center,center,nowrap);
-        padding: $standard-padding $middle-padding;
-
         width: 90%;
         height:25%;
+        padding: $standard-padding $middle-padding;
 
         &__des{
-            text-decoration: none;
+            @include font(text);
             width:60%;
             margin: 0 0;
-            @include font(text);
+
+            text-decoration: none;
 
             &__name{
                 margin: $standard-margin 0;

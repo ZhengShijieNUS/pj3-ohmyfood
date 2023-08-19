@@ -54,6 +54,7 @@
     &__list{
         @include flex-display(column,flex-start,center,center,nowrap);
         width: 95%;
+        
         position: relative;
         left:5%;
         
@@ -71,10 +72,9 @@
     @include flex-display(column,flex-start,flex-start,flex-start,nowrap);
     width: 100%;
     height:auto;
+    padding-bottom: $middle-padding;
     
     background-color: adjust-color($color-grey,$lightness:22.5%);
-
-    padding-bottom: $middle-padding;
 
     &__subheader{
         @include font("text");
@@ -82,11 +82,10 @@
     }
 
     &__list{
+        @include flex-display(column,space-between,center,center,nowrap);
         width:90%;
         height:80%;
         padding: 0 $middle-padding;
-
-        @include flex-display(column,space-between,center,center,nowrap);
 
         &__card{
             @extend .restaurants-card;

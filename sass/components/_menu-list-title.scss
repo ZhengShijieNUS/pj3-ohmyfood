@@ -8,10 +8,11 @@
     }
 
     & > div{
-        padding-top: calc($standard-padding/2);
         width: 60%;
-        background-color: $color-tertiary;
         height: 3px;
+        padding-top: calc($standard-padding/2);
+        
+        background-color: $color-tertiary;
     }
 
 }
