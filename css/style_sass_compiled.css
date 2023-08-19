@@ -529,10 +529,25 @@ body {
 }
 .restaurants__loading-animation {
   position: absolute;
-  top: 150vh;
+  top: 150%;
   align-self: center;
   z-index: 1;
   animation: hiding 5s both 1;
+}
+@media screen and (min-width: 720px) {
+  .restaurants__loading-animation {
+    top: 200%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__loading-animation {
+    top: 250%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .restaurants__loading-animation {
+    top: 300%;
+  }
 }
 .restaurants__list {
   display: flex;
