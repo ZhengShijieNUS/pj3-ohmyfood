@@ -1,20 +1,27 @@
 .like-img{
 
     cursor: pointer;
-            
-    background-image: url('/assets/icon/heart-regular.svg'); /* path to empty heart svg*/
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: background-color 0.3s ease; 
+    
+    &__regular{
+        font-size: 5vh;
+    }
 
-    &:hover{
-        background-image:linear-gradient(to top right,$color-secondary,$color-primary);
-        
-        background-size: contain;
-        -webkit-mask-image: url('/assets/icon/heart-solid.svg'); /* path of the svg used to mask the background-image,-webkit-is used to solve the compatibility issue on different browser */
-        mask-image: url('/assets/icon/heart-solid.svg');
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat:no-repeat;
-    }    
+    &__solid{
+        font-size: 5vh;
+        display:none;
+        i {
+            background:-webkit-gradient(linear, left bottom, right top, from($color-secondary), to($color-primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &:hover &__regular{
+        display:none;
+    }
+    
+    &:hover &__solid{
+        display:block;
+    }
     
 }

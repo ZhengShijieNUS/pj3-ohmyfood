@@ -73,18 +73,24 @@ body {
 
 .like-img, .subpage-main__menu__heading__like, .restaurants-card__sub-description__like {
   cursor: pointer;
-  background-image: url("/assets/icon/heart-regular.svg"); /* path to empty heart svg*/
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: background-color 0.3s ease;
 }
-.like-img:hover, .subpage-main__menu__heading__like:hover, .restaurants-card__sub-description__like:hover {
-  background-image: linear-gradient(to top right, #FF79DA, #9356DC);
-  background-size: contain;
-  -webkit-mask-image: url("/assets/icon/heart-solid.svg"); /* path of the svg used to mask the background-image,-webkit-is used to solve the compatibility issue on different browser */
-  mask-image: url("/assets/icon/heart-solid.svg");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+.like-img__regular {
+  font-size: 5vh;
+}
+.like-img__solid {
+  font-size: 5vh;
+  display: none;
+}
+.like-img__solid i {
+  background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.like-img:hover .like-img__regular, .subpage-main__menu__heading__like:hover .like-img__regular, .restaurants-card__sub-description__like:hover .like-img__regular {
+  display: none;
+}
+.like-img:hover .like-img__solid, .subpage-main__menu__heading__like:hover .like-img__solid, .restaurants-card__sub-description__like:hover .like-img__solid {
+  display: block;
 }
 
 .menu-list-title, .subpage-main__menu__list__title {
@@ -209,10 +215,6 @@ body {
 }
 .restaurants-card__sub-description__des__loc {
   margin: 2.5% 0;
-}
-.restaurants-card__sub-description__like {
-  width: 5vh;
-  height: 5vh;
 }
 .restaurants-card > a, .restaurants__list__card > a {
   text-decoration: none;
@@ -519,8 +521,6 @@ body {
   font-family: "Shrikhand", cursive;
 }
 .subpage-main__menu__heading__like {
-  width: 5vh;
-  height: 5vh;
   margin-right: 2.5%;
 }
 .subpage-main__menu__button {
