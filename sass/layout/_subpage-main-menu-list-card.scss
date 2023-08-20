@@ -13,7 +13,7 @@
     cursor: pointer;
 
     &__item{
-        width: 80%;
+        width: 75%;
         padding: $middle-padding $middle-padding $middle-padding $middle-padding;
 
         transition: all 400ms linear;
@@ -60,17 +60,35 @@
 
     }
 
-    &:hover > &__item {
+    &__input{
+        visibility: hidden;
+        position: absolute;
+        transform: translate(85%,85%);
+    }
+
+    &__input:checked ~ &__item{
         width: 50%;
-    }  
-        
-    &:hover > &__selected{
+    }
+
+    &__input:checked ~ &__selected{
         width: 20%;
 
         & > i{
             transform: rotate(360deg);
         }
-
     }
+
+    // &:hover > &__item {
+    //     width: 50%;
+    // }  
+        
+    // &:hover > &__selected{
+    //     width: 20%;
+
+    //     & > i{
+    //         transform: rotate(360deg);
+    //     }
+
+    // }
 
 }
