@@ -432,13 +432,18 @@ body {
 .subpage-main-menu-list-card__price::after {
   content: "€";
 }
-.subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__item, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__item {
+.subpage-main-menu-list-card__input {
+  visibility: hidden;
+  position: absolute;
+  transform: translate(85%, 85%);
+}
+.subpage-main-menu-list-card__input:checked ~ .subpage-main-menu-list-card__item {
   width: 50%;
 }
-.subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__selected, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__selected {
+.subpage-main-menu-list-card__input:checked ~ .subpage-main-menu-list-card__selected {
   width: 20%;
 }
-.subpage-main-menu-list-card:hover > .subpage-main-menu-list-card__selected > i, .subpage-main__menu__list__card:hover > .subpage-main-menu-list-card__selected > i {
+.subpage-main-menu-list-card__input:checked ~ .subpage-main-menu-list-card__selected > i {
   transform: rotate(360deg);
 }
 
