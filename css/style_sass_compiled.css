@@ -108,10 +108,15 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.like-img:hover .like-img__regular, .subpage-main__menu__heading__like:hover .like-img__regular, .restaurants-card__sub-description__like:hover .like-img__regular {
+.like-img__input {
+  visibility: hidden;
+  position: absolute;
+  transform: translate(85%, 85%);
+}
+.like-img__input:checked ~ .like-img__regular {
   opacity: 0;
 }
-.like-img:hover .like-img__solid, .subpage-main__menu__heading__like:hover .like-img__solid, .restaurants-card__sub-description__like:hover .like-img__solid {
+.like-img__input:checked ~ .like-img__solid {
   opacity: 1;
 }
 

@@ -26,12 +26,18 @@
         }
     }
 
-    &:hover &__regular{
-        opacity: 0;
+    &__input{
+        visibility: hidden;
+        position: absolute;
+        transform: translate(85%,85%);
     }
-    
-    &:hover &__solid{
-        opacity: 1;
+
+    &__input:checked ~ .like-img__regular{
+        opacity:0;
+    }
+
+    &__input:checked ~ .like-img__solid{
+        opacity:1
     }
     
 }
