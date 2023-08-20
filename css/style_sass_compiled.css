@@ -382,7 +382,7 @@ body {
   cursor: pointer;
 }
 .subpage-main-menu-list-card__item {
-  width: 80%;
+  width: 75%;
   padding: 5% 5% 5% 5%;
   transition: all 400ms linear;
 }
@@ -532,7 +532,7 @@ body {
   top: 150%;
   align-self: center;
   z-index: 1;
-  animation: hiding 5s both 1;
+  animation: hiding 3s both 1;
 }
 @media screen and (min-width: 720px) {
   .restaurants__loading-animation {
